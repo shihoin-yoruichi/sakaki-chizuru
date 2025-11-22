@@ -166,8 +166,8 @@ const startSock = async() => {
                 console.log('requested on-demand sync, id=', messageId)
               }
 
-              if (text == "testZenkai") {
-               await sendMessageWTyping({ text: 'Hello there!' }, msg.key.remoteJid!) 
+              if (text == "menu") {
+               await sendMessageWTyping({ image: { url: '/Files/Menu/'},}, msg.key.remoteJid!) 
 	      } 
 
               if (!msg.key.fromMe && doReplies && !isJidNewsletter(msg.key?.remoteJid!)) {
